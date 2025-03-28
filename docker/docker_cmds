@@ -1,0 +1,6 @@
+docker build -t dockerid8072608/tagname:v1 . 
+#Which is used to build the image
+
+docker run dockerid8072608/tagname:v1
+#which is used to run the container
+
