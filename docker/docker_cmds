@@ -12,3 +12,7 @@ docker login docker.io
 
 docker push image_name
 #Push the docker images to docker registry which you specefied
+
+docker images
+#To list the images
+
