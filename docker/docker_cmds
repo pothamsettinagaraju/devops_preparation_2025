@@ -5,4 +5,4 @@ docker run dockerid8072608/tagname:v1
 #which is used to run the container
 
 docker init
-#if you goto code and run docker init, which help to create Dockerfile by init with known languages
+#if you goto code and run docker init, which help to create Dockerfile by init for programming languages it supports
