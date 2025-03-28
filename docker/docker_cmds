@@ -6,3 +6,9 @@ docker run dockerid8072608/tagname:v1
 
 docker init
 #if you goto code and run docker init, which help to create Dockerfile by init for programming languages it supports
+
+docker login docker.io
+#To login the DockerHub from CLI to push the changes by below commands
+
+docker push image_name
+#Push the docker images to docker registry which you specefied
