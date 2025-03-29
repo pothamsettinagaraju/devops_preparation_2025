@@ -21,3 +21,6 @@ docker compose down
 
 docker compose up
 #start up all the containers with one start, Which create all and start all the containers(images)
+
+docker ps
+#To list all running containers in docker
