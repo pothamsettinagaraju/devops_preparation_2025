@@ -16,3 +16,8 @@ docker push image_name
 docker images
 #To list the images
 
+docker compose down
+#Which removes network and containers(images) if existing
+
+docker compose up
+#start up all the containers with one start, Which create all and start all the containers(images)
