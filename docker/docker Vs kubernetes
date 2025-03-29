@@ -1,0 +1,9 @@
+Docker containers is ephemeral nature(short lived)
+Docker does not support service discovery which means 
+if container goes down, and we started again the container, and other depended container didn't discover this started container because the IP address was changed.
+and also docker didn't support the few things:
+  1. Service discovery
+  2. high availability
+  3. load balancing
+  4. API gateway
+
