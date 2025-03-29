@@ -26,6 +26,15 @@ docker compose up -d
 #Start up all the containers with one start at background
 
 docker ps
-#To list all running containers in docker
+#To show only running containers
+
+docker ps -a
+#To show all containers(running and not running)
+
+docker ps -l
+#To show the latest created container (includes all states)
+
+docker ps -s
+#To display total file sizes
 
 
