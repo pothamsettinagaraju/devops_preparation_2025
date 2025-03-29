@@ -1,1 +1,6 @@
 Terraform - is a IOC (Infrastructure as a code) which can intract multiple clouds and create services
+
+life cycle of terraform
+  1. terraform init - to inintialize the code
+  2. terraform plan - to plan the resources(vpn,s3,etc) - dry run - which tells what are going to create
+  3. terraform apply - which creates the planned resources in Cloud.
