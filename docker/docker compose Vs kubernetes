@@ -1,1 +1,7 @@
-docker compose - To run multiple containers along with the configuration
+docker compose - To run multipule containers (or) to tear down multipule container along with the configuration.
+Kubernetes provides container orchestration like:
+1. Service discovery
+2. clustering
+3. HA
+4. LB
+5. etc
