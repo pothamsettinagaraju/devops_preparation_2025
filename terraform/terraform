@@ -10,3 +10,4 @@ What is statefile
 What is statefile management
 what is remote backend and state locking modules
 What is modules in terraform
+module is a reusable code
