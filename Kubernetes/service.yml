@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+   specify if any labels name you want to provide
+
+spec:
+  type: ClusterIP(internal)/NodePort/LoadBalancer(external)
+  ports:
+    - port: 8080
+      name: nameofport
+      targetPort: 8080 (container port)
+    selectors:
+      name of your labels in deployment file for container( which resolve the issue of service discovery) 
