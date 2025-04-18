@@ -11,7 +11,7 @@ spec:
   template: 
     metadata:
       labels:
-        appp-kubernetes.io/name: your mircro_service_name
+        app-kubernetes.io/name: your mircro_service_name
     spec:
       serviceAccountName: name of your service account
       containers:
