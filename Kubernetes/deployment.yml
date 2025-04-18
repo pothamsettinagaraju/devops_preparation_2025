@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: NameOfDeployment_related to your deployment file
+  labels: 
+    app-kubernetes.io/team_name: your micro_service name
+
+spec:
+  replicaset: 1
+  template: 
+    metadata:
+      labels:
+        appp-kubernetes.io/name: your mircro_service_name
+    spec:
+      service account name: name of your service account
+      containers:
+        - name: container_name
+          image: image_location_with_name
+          ports:
+          env:
+          volumes:
