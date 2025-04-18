@@ -1,0 +1,5 @@
+Kubernetes two important resources
+
+1. Deployment - Scalling and Healing: Deployment will create a replica set to maintain container always scalling and healing
+2. Service - Service discovery: When container or pod goes down, that time this service works like a proxy to get new IP address of the container by using labels and selectos.
+
