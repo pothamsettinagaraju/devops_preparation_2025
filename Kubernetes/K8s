@@ -4,3 +4,9 @@ Kubernetes two important resources
 2. Service - Service discovery: When container or pod goes down, that time this service works like a proxy to get new IP address of the container by using labels and selectos.
 3. service account - K8s provides service account to k8s
 
+service types:
+
+1. ClusterIP: resource is accessable within the clusterIP
+2. NodePort: resource is accessable with in the VPC
+3. LoadBalancer: resource is accessable to external world
+we use above service types in service.yml file 
