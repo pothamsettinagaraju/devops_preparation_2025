@@ -1,0 +1,15 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress.controller.nameofservice
+  labeles:
+    provide the name of your ingress labels
+  spec:
+    rules:
+     - host: amazon.com
+       http: 
+       paths:
+        - path: /
+        backend: 
+          service:
