@@ -10,3 +10,33 @@ service types:
 2. NodePort: resource is accessable with in the VPC
 3. LoadBalancer: resource is accessable to external world, if we are using AWS, it will create VPC
 we use above service types in service.yml file 
+
+Loadbalancer Service:
+advantage of using service load balancer:
+-> very easy to configure
+drawbacks:
+-> Load balancer is a declarative way, we don't have control from k8s, if we want to make any changes we have to do from AWS, so if make anything in aws we don't have track of it from k8s
+-> by default loadbalancer creats http not https, if i want make https, i must do from aws.
+-> cost: - if want to add loadbalancer to my 10 services, i must create each for serperate, i don't have flexiblity to create only 1 load balancer with multiple ports.
+-> for adding load balancer it tied to only AWS load balancer, if i want F5 or NGNIX or Traffic Envoy it's not possible with load balancer service type.(lack of flexibility)
+-> what if cluster does not have of CCM. Ex: minikube
+
+Ingress:
+Advantages:
+-> It's a declarative way(yaml)
+-> cost effevtive because one load balancer can route request to 10 or 20 or 100 micro servies using host based routing or path based routing.
+-> it's not depend up on CCM or who does not support CCM like minikube. may be som reverse proxy it can create externalIP address
+drawback:
+needs to create yaml and more configuration
+
+
+Ingress vs Ingress Controller:
+Ingress:
+-> ingress controller reads the igress yaml file and will do accordingly
+-> routing
+-> rules
+-> it handles incoming traffic
+
+
+
+
