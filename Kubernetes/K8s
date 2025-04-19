@@ -10,7 +10,7 @@ service types:
 2. NodePort: resource is accessable with in the VPC
 3. LoadBalancer: resource is accessable to external world, if we are using AWS, it will create VPC
 we use above service types in service.yml file 
-
+FQDN: fully qualified domain name
 Loadbalancer Service:
 advantage of using service load balancer:
 -> very easy to configure
@@ -31,12 +31,12 @@ needs to create yaml and more configuration
 
 
 Ingress vs Ingress Controller:
-Ingress:
+Ingress: Ingress resource which defines the rules is read by ingress controller. And this ingress controller create the load balancer.
 -> ingress controller reads the igress yaml file and will do accordingly
 -> routing
 -> rules
 -> it handles incoming traffic
 
 
-
+OIDC
 
