@@ -8,5 +8,5 @@ service types:
 
 1. ClusterIP: resource is accessable within the clusterIP
 2. NodePort: resource is accessable with in the VPC
-3. LoadBalancer: resource is accessable to external world
+3. LoadBalancer: resource is accessable to external world, if we are using AWS, it will create VPC
 we use above service types in service.yml file 
