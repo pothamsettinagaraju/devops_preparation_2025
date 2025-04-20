@@ -54,3 +54,9 @@ controller pod. We can create ingress resource using Ingress.yml file. in Ingres
 and we can define service. after we created ingress.yml file. while running ingres.yml file Ingress Controller reads the yml file and create load balancer accordingly.
 
 How to run ingress.yml file: kubectl apply -f ingress.yml
+
+Custom domain name registration and mapping to route 53?
+First we choose Domain registration and we create a domain from GoDaddy or any other. 
+after that we got to route 53 in AWS and we map name to Route 53, there we have to choose alias name as www. and we create records, and it will give server names, so we can add to GoDaddy server names.
+after that we have to update the domain name in ingress.yml file and again we run that file to reflect the changes. after that we can check, nslookup domain name.it map to
+server names are not, it will take 2 to 48 hrs time to reflect.
