@@ -53,3 +53,4 @@ Before that, we have to create policy and role(using IAM OIDC Provider0. And the
 controller pod. We can create ingress resource using Ingress.yml file. in Ingress.yml file we can define all required information like host based routing and path based routing
 and we can define service. after we created ingress.yml file. while running ingres.yml file Ingress Controller reads the yml file and create load balancer accordingly.
 
+How to run ingress.yml file: kubectl apply -f ingress.yml
