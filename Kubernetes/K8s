@@ -41,5 +41,15 @@ Ingress: Ingress resource which defines the rules is read by ingress controller.
 -> it handles incoming traffic
 
 
-OIDC
+OIDC Connector
+
+IAM OIDC Provider
+
+to check logs of alb container: kubectl logs containername -n kube-system
+
+How to create Ingress resource?
+For creating Ingress reource we first create Ingress controller.
+Before that, we have to create policy and role(using IAM OIDC Provider0. And the role must be attach to K8s Service account. after that we can create Ingress controller pod. once we create Ingress
+controller pod. We can create ingress resource using Ingress.yml file. in Ingress.yml file we can define all required information like host based routing and path based routing
+and we can define service. after we created ingress.yml file. while running ingres.yml file Ingress Controller reads the yml file and create load balancer accordingly.
 
