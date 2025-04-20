@@ -4,6 +4,9 @@ Kubernetes two important resources
 2. Service - Service discovery: When container or pod goes down, that time this service works like a proxy to get new IP address of the container by using labels and selectos.
 3. service account - K8s provides service account to k8s
 
+how to check which cluster i have connected: kubectl config current-context
+How to check EKs cluster version: eksctl version
+
 service types:
 
 1. ClusterIP: resource is accessable within the clusterIP
